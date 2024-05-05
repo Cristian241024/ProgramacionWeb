@@ -21,7 +21,6 @@ body{
     height: 100vh;
     background-color: var(--fondo-color);
     position: relative;
-    
 }
 
 nav{
@@ -50,8 +49,8 @@ nav span i{
 }
 
 #menu:checked ~ .aside{
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .aside{
@@ -63,11 +62,11 @@ nav span i{
     left: 0;
     transition: all 500ms ease;
 
-    opacity: 0;
-    visibility: hidden;
+    opacity: 1;
+    visibility:visible;
 
     overflow-y: hidden;
-    margin-top: 50px;
+    margin-top: 48px;
 
     z-index: 10;
 }
@@ -78,13 +77,11 @@ nav span i{
     background: var(--fondo-color);
     height: 89vh;
     position: relative; 
-    transition: all 500ms ease;
-    transform: translateX(-100%);
+    transition: all 500ms ease; 
 }
 
-
 #menu:checked ~ .aside .aside_container{
-    transform: translateX(0%);
+    transform: translateX(-100%);
 }
 
 .aside_container:hover{
@@ -100,14 +97,12 @@ nav span i{
     border-radius: 5px;
 }
 
-/*.aside_container .nav-aside summary:hover{
-    background-color: #303030;
-}*/
 
 
 
 .secion__titulo{
     font-size: 2rem;
+    padding: 20px;
 }
 .secion{
     width: 100%;
@@ -116,8 +111,7 @@ nav span i{
     top: 0;
     left: 0;
     bottom: 0;
-    overflow-y: hidden;
-    margin-top: 50px;
+    margin-top: 48px;
     position:absolute;
 
     color: #fff;
@@ -130,38 +124,21 @@ nav span i{
     container-type: inline-size; 
 }
 
-.secion:hover{
-    overflow-y: auto;
-}
 
-.secion::-webkit-scrollbar{
-    width: 5px;
-}
-
-.secion::-webkit-scrollbar-thumb{
-    background-color: #26045e;
-    border-radius: 5px;
-}
 
 .secion__container-doc{
     display: grid;
-    grid-template-columns: 1fr;
-    max-width: 1200px;
-    margin: auto;
-    width: 90%;
-    gap: 15px;
-    padding: 15px;
-    min-height: 90vh;
+    margin:auto;
+    width: 85%;
+    min-height: 70vh;
 }
 
 .secion-doc{
-    background-image: linear-gradient(#0005,#0005), url("fondo.png");
+    background-image: linear-gradient(#0005,#0005), url("anime.jpeg");
     background-position: center;
     background-size: cover;
     display: grid;
     place-content: center;
-    text-decoration: none;
-    color: #fff;
 }
 
 .secion-doc:hover{

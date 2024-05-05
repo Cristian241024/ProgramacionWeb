@@ -1,6 +1,3 @@
-const $openClose = document.getElementById("open-close"),
-        $aside = document.getElementById("aside");
-
 let listElements = document.querySelectorAll(".list__button");
 
 listElements.forEach(listElement => {
@@ -17,8 +14,5 @@ listElements.forEach(listElement => {
     })
 });
 
-$openClose.addEventListener("click",()=>{
-    $aside.classList.toggle("desplegar")
-})
 
 
