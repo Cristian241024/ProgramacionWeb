@@ -156,7 +156,7 @@ nav span i{
 }
 
 .secion-doc{
-    background-image: linear-gradient(#0005,#0005), url("fondo.png");
+    background-image: linear-gradient(#0005,#0005), url("../imagenes/fondo.png");
     background-position: center;
     background-size: cover;
     display: grid;
