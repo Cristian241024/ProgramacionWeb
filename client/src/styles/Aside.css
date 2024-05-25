@@ -1,0 +1,114 @@
+.aside {
+    width: 100%;
+
+    position: fixed;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateX(-100%);
+    background: var(--fondo-color);
+    
+    width: 200px;
+    height: 89vh;
+    
+    transition: all 500ms ease;
+
+    margin-top: 65px;
+
+    z-index: 10;
+
+    overflow-y: hidden;
+    
+}
+
+aside:hover{
+    overflow-y: auto;
+}
+
+aside::-webkit-scrollbar{
+    width: 4px;
+}
+
+aside::-webkit-scrollbar-thumb{
+    background-color: #666262;
+    border-radius: 5px;
+}
+
+.aside.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.aside.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+    filter: invert(100%) brightness(100%);
+}
+
+.nav__link{
+    color: var(--text-color);
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav__link-inside{
+    border-radius: 8px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 11px;
+}
+
+
+
+.nav__link-inside:hover{
+    background: #0005;
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #e1e3eb;
+    list-style: none;
+    transition: height 0.4s;
+    height: 0;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__img{
+    filter: invert(100%) brightness(100%);
+    
+}
