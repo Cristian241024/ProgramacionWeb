@@ -17,7 +17,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: seagreen;
+  background: url(./Componentes/Assets/fondo.mp4)no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 
 code {
