@@ -4,11 +4,13 @@ import Inicio from '../pages/Inicio';
 import Docentes from '../pages/Docentes';
 import Materiales from '../pages/Materiales';
 import Archivos from '../pages/Archivos';
+import Login from '../pages/Login';
 import NotFound from '../pages/NotFound';
 
 export function MyRoutes(){
     return(
         <Routes>
+            <Route path='/login' element={<Login/>}/>
             <Route path='/docentes/:id' element={<Docentes />} />
             <Route path='/material' element={<Materiales />} />
             <Route path='/archivos' element={<Archivos />} />

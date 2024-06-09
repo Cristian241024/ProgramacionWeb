@@ -20,4 +20,9 @@ nav label i{
     display: none;
 }
 
+.btnLogin{
+    position: absolute;
+    right: 20px;
+}
+
 
