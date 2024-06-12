@@ -18,7 +18,7 @@ function Login() {
   const handleLoginClick = (event) => {
     event.preventDefault();
     if (username === predefinedUsername && password === predefinedPassword) {
-      navigate("/login");
+      navigate("/admin");
     } else {
       alert("Username or password is incorrect");
     }
